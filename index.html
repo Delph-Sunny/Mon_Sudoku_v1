@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon website -->
+    <link rel="icon" type="image/png" href="./assets/images/sudoku.png" sizes="16x16">
+    <title>Mon Sudoku</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="topbar">
+        <div class="topbar-container">
+            <div class="left">
+                <a class="link" href="./highscore.html">Voir les scores</a>
+            </div>
+            <div class="right">
+                <input type="text" class="timer" readonly value="">
+            </div>
+        </div>
+    </div>
+    <!-- Container for the sudoku table -->
+    <div class="container_1"> 
+        <div id="start-container">
+            <h1>Sudoku de la Mum</h1>
+            <p id="start-txt">Choisissez le niveau de difficulté puis cliquez sur Démarrer pour lancer le jeu.
+                Le chronomètre s'arrêtera lorsque la dernière case vide sera remplie.
+            </p>
+        </div>  
+        <div class="controls">
+            <a class="btn" id="start-btn" href="#">Démarrer</a>
+        </div>
+    </div>  
+    <div class="container_2"> 
+        <div id="sudoku-container">
+            <!-- Table example --> 
+            <div id="tbl1" class="tbl"> 
+                <div id="c_0-0" class="box">
+                    <div id="vc_0-0" class="box-text">1</div>
+                </div>
+                <div id="c_1-0" class="box">
+                    <div id="vc_1-0" class="box-text">2</div>
+                </div>
+                <div id="c_2-0" class="box">
+                    <div id="vc_2-0" class="box-text">3</div>
+                </div>
+                <div id="c_0-1" class="box">
+                    <div id="vc_0-1" class="box-text">4</div>
+                </div>
+                <div id="c_1-1" class="box">
+                    <div id="vc_1-1" class="box-text">5</div>
+                </div>
+                <div id="c_2-1" class="box">
+                    <div id="vc_2-1" class="box-text">6</div>
+                </div>
+                <div id="c_0-2" class="box">
+                    <div id="vc_0-2" class="box-text">7</div>
+                </div>
+                <div id="c_1-2" class="box">
+                    <div id="vc_1-2" class="box-text">8</div>
+                </div>
+                <div id="c_2-2" class="box">
+                    <div id="vc_2-2" class="box-text">9</div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="btn" id="undo-btn" href="#">Annuler</button>
+            <button class="btn" id="restart-btn" href="#">Relancer</button>
+        </div>
+    </div>  
+</body>
+</html>
